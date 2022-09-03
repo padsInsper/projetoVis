@@ -41,7 +41,7 @@ Column {data-width=350}
 dados::dados_starwars |> 
   dplyr::arrange(dplyr::desc(altura)) |> 
   dplyr::slice_head(n = 10) |> 
-  knitr::kable()
+  DT::datatable()
 ```
 
 ### Chart C
